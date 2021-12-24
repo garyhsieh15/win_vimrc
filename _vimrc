@@ -1,7 +1,9 @@
 " ---------------------------------------------------------------------------------------
-" .vimrc setting file via gary hsieh
+" name       : _vimrc
+" description: _vimrc setting
 " 
-" date: 20211225
+" date       : 20211225
+" author     : garyhsieh.twn
 " ---------------------------------------------------------------------------------------
 
 syntax on                               " Enable syntax highlighting.
