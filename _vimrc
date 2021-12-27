@@ -1,13 +1,18 @@
 " ---------------------------------------------------------------------------------------
-" name       : _vimrc
-" description: _vimrc setting
+" .vimrc setting file via gary hsieh
 " 
-" date       : 20211225
-" author     : garyhsieh.twn
+" date: 20200716
 " ---------------------------------------------------------------------------------------
 
 syntax on                               " Enable syntax highlighting.
 filetype plugin indent on               " Enable file type based indentation.
+
+" Install vim-plug if it's not already installed (Unix-only).
+"if empty(glob('~/.vim/autoload/plug.vim'))
+"  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
+"    \ https://raw.github.com/junegunn/vim-plug/master/plug.vim
+"  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+"endif
 
 " Download and install vim-plug (cross platform).
 if empty(glob(
@@ -18,6 +23,7 @@ if empty(glob(
     \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
+
 
 " set th runtimepath to include autoload initialize
 " set rtp+=~/.vim/autoload/
@@ -75,29 +81,12 @@ set ruler                               " lower right display info.
 
 set scrolloff=3                         " keep cursor 3 lines away form screen border
 
-
 " view ----------------------------------------------------------------------------------
 " package: vim-airline setting
 
 " package: vim-airline-themes setting
 let g:airline_theme='minimalist'
 
-" 不顯示工具/menu
-set guioptions-=T
-set guioptions-=m
-set guioptions-=L
-set guioptions-=r
-set guioptions-=b
-
-" 窗口大小
-set lines=46 columns=140
-
-" 切割出來的窗口位於窗口下/右邊
-set splitbelow
-set splitright
-
-" setting font type and size
-set guifont=Source\ Code\ Pro\ for\ Powerline:h12:cANSI
 
 " setting type of color, softlink to colors file.
 set background=dark

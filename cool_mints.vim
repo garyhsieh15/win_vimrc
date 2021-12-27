@@ -25,11 +25,11 @@ hi MoreMsg          term=none       cterm=none ctermfg=230 ctermbg=none gui=none
 hi ModeMsg          term=none       cterm=none ctermfg=230 ctermbg=none gui=none guifg=#ffff87 guibg=NONE
 hi LineNr           term=none       cterm=none ctermfg=15 ctermbg=0 gui=none guifg=#ffffff guibg=#000000
 " hi CursorLineNr     term=bold       cterm=underline ctermfg=230 ctermbg=none gui=bold guifg=#ffff87 guibg=NONE
-hi CursorLineNr     term=bold       cterm=bold ctermfg=15 ctermbg=1 gui=bold guifg=#ffffff guibg=800000
+hi CursorLineNr     term=bold       cterm=bold ctermfg=15 ctermbg=1 gui=bold guifg=#ffffff guibg=#800000
 hi Question         term=standout   cterm=none ctermfg=81 ctermbg=none gui=none guifg=#5fd7ff guibg=NONE
 hi StatusLine       term=reverse    cterm=none ctermfg=66 ctermbg=none gui=none guifg=#5f8787 guibg=NONE
 hi StatusLineNC     term=reverse    cterm=none ctermfg=8 ctermbg=232 gui=none  guifg=#808080 guibg=#080808
-hi VertSplit        term=reverse    cterm=none ctermfg=8 ctermbg=232 gui=bold guifg=#80808 guibg=#080808
+hi VertSplit        term=reverse    cterm=none ctermfg=8 ctermbg=232 gui=bold guifg=#808080 guibg=#080808
 hi Title            term=none       cterm=none ctermfg=209 ctermbg=none gui=none guifg=#ff875f guibg=NONE
 hi Visual           term=reverse    cterm=none ctermfg=255 ctermbg=95 gui=none guifg=#eeeeee guibg=#875f5f
 hi VisualNOS        term=none       cterm=none ctermfg=255 ctermbg=95 gui=none guifg=#eeeeee guibg=#875f5f
@@ -37,8 +37,9 @@ hi WarningMsg       term=standout   cterm=none ctermfg=15 ctermbg=236 gui=bold g
 hi WildMenu         term=standout   cterm=none ctermfg=81 ctermbg=233 gui=none guifg=#5fd7ff guibg=#121212
 hi Folded           term=standout   cterm=none ctermfg=66 ctermbg=0 gui=none guifg=#5f8787 guibg=#000000
 hi FoldColumn       term=standout   cterm=none ctermfg=66 ctermbg=0 gui=none guifg=#5f8787 guibg=#000000
-hi DiffAdd          term=none       cterm=none ctermfg=none ctermbg=24 gui=none guifg=none guibg=#005f87
-hi DiffChange       term=bold       cterm=none ctermfg=none ctermbg=238 gui=none guifg=none guibg=#444444
+"hi DiffAdd          term=none       cterm=none ctermfg=none ctermbg=24 gui=none guifg=none guibg=#005f87
+hi DiffAdd          term=none       cterm=none ctermfg=none ctermbg=24 gui=none guifg=NONE guibg=#005f87
+hi DiffChange       term=bold       cterm=none ctermfg=none ctermbg=238 gui=none guifg=NONE guibg=#444444
 hi DiffDelete       term=none       cterm=none ctermfg=125 ctermbg=125 gui=none guifg=#af005f guibg=#af005f
 hi DiffText         term=reverse    cterm=bold ctermfg=0 ctermbg=202 gui=bold guifg=#000000 guibg=#ff5f00
 hi SignColumn       term=standout   cterm=none ctermfg=149 ctermbg=74 gui=none guifg=#afd75f guibg=#5fafd7
@@ -53,11 +54,9 @@ hi PmenuSbar        term=none       cterm=none ctermfg=81 ctermbg=232 gui=none g
 hi PmenuThumb       term=none       cterm=none ctermfg=81 ctermbg=none gui=none guifg=#5fd7ff guibg=NONE
 hi TabLine          term=none       cterm=none ctermfg=255 ctermbg=242 gui=none guifg=#eeeeee guibg=#666666
 hi TabLineSel       term=none       cterm=none ctermfg=255 ctermbg=none gui=none guifg=#eeeeee guibg=NONE
-hi TabLineFill      term=none       cterm=none ctermfg=none ctermbg=235 gui=none guifg=none guibg=#262626
-hi CursorColumn     term=none       cterm=none ctermfg=none ctermbg=235 gui=none guifg=none guibg=#262626
-" hi CursorLine       term=none       cterm=none ctermfg=none ctermbg=235 gui=none guifg=none guibg=#262626
-" hi CursorLine       term=none       cterm=none ctermfg=none ctermbg=236 gui=none guifg=none guibg=#262626
-hi CursorLine       term=none       cterm=none ctermfg=none ctermbg=none gui=none guifg=none guibg=none
+hi TabLineFill      term=none       cterm=none ctermfg=none ctermbg=235 gui=none guifg=NONE guibg=#262626
+hi CursorColumn     term=none       cterm=none ctermfg=none ctermbg=235 gui=none guifg=NONE guibg=#262626
+hi CursorLine       term=none       cterm=none ctermfg=none ctermbg=none gui=NONE guifg=NONE guibg=NONE
 " hi CursorLine       term=none       cterm=none ctermfg=none ctermbg=1 gui=none guifg=none guibg=#3a3a3a
 hi clear ColorColumn
 hi link ColorColumn CursorLine
@@ -147,7 +146,6 @@ hi Normal           term=none       cterm=none ctermfg=230 ctermbg=233 gui=none 
 hi Identifier       term=none       cterm=none ctermfg=230 ctermbg=none gui=none guifg=#afd700 guibg=NONE
 hi clear Cursor
 hi Cursor           term=none       cterm=none ctermfg=7 ctermbg=26 gui=none guifg=#c0c0c0 guibg=#005fd7
-" hi Cursor           term=none       cterm=none ctermfg=1 ctermbg=26 gui=none guifg=#c0c0c0 guibg=#005fd7
 
 hi GitGutterChange  term=bold       cterm=bold ctermfg=202 ctermbg=233 gui=bold guifg=#ff5f00 guibg=#121212
 hi GitGutterDelete  term=bold       cterm=bold ctermfg=125 ctermbg=233 gui=bold guifg=#af005f guibg=#121212
