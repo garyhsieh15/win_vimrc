@@ -87,6 +87,22 @@ set scrolloff=3                         " keep cursor 3 lines away form screen b
 " package: vim-airline-themes setting
 let g:airline_theme='minimalist'
 
+" 不顯示工具/menu
+set guioptions-=T
+set guioptions-=m
+set guioptions-=L
+set guioptions-=r
+set guioptions-=b
+
+" 窗口大小
+set lines=46 columns=140
+
+" 切割出來的窗口位於窗口下/右邊
+set splitbelow
+set splitright
+
+" setting font type and size
+set guifont=Source\ Code\ Pro\ for\ Powerline:h12:cANSI
 
 " setting type of color, softlink to colors file.
 set background=dark
