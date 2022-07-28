@@ -17,7 +17,7 @@ filetype plugin indent on               " Enable file type based indentation.
 " Download and install vim-plug (cross platform).
 if empty(glob(
     \ '$HOME/' . (has('win32') ? 'vimfiles' : '.vim') . '/autoload/plug.vim'))
-  execute '!curl -fLo ' .
+  execute '!curl --ssl-no-revoke -fLo ' .
     \ (has('win32') ? '\%USERPROFILE\%/vimfiles' : '$HOME/.vim') . 
     \ '/autoload/plug.vim --create-dirs ' .
     \ 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
